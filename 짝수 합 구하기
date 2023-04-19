@@ -1,0 +1,21 @@
+#숫자를 입력받기 기능 => n이라고 하자
+#1부터 n까지 반복 => for
+#반복하면서 나오는 숫자가 짝수 인지 검사 %2==0
+#합 구하기 => 합을 보관하는 변수 sum을 만들자
+n=int(input())
+sum=0
+for i in range(1,n+1):
+#i가 1~n까지 값이 들어옴
+#i가 짝수인지 판단
+  if i%2==0:
+#sum에다 i를 누적 => 누적한다는 것은 현재sum에 k를 추가=>sum에 보관
+    sum=sum+i
+#반복이 끝났음
+print(sum)
+#n=int(input())
+#sum=0
+
+#for i in range(2,n+1,2):
+  #if i%2==0:
+    #sum=sum+i
+#print(sum)
