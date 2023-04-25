@@ -1,0 +1,15 @@
+#파이썬에서 함수는 def로 선언함 => def 이름()
+#def printMyName
+def print_my_name(name,age): #name , age => 매개변수(파라미터, 인자)
+  #자동으로 들여쓰기 시작
+  #print('나는 '+name+'입니다.')
+  print(f'나는 {name}입니다.') #f: 안에 변수를 바로 사용할 때 중괄호로 감싸면 됨
+  print(f'나는 {age}살입니다.')
+  hello()
+#print_my_name()은 불가 => 대신 ()안에 정보를 입력해야함
+#print_my_name('jeong') 사용
+
+def hello():
+  print('반갑습니다.')
+
+print_my_name(name='정인서',age=17) #매개변수의 이름을 지정하면 순서가 상관없음
