@@ -1,0 +1,63 @@
+def find_value(mylist): #mylist는 배열이라고 생각하고 작성
+  #배열에서 최대값 찾기
+  max= -1
+  for k in mylist:
+    if max < k :
+      max = k
+  print(max)
+list = [4,3,1,7,5,8]
+find_value(list)
+list2 = [41,3,4,5,66,54,3,1,7,5,8]
+find_value(list2)
+
+print("===============")
+
+def findsmall(mylist):
+  #최소값 출력
+  min= 100
+  for k in mylist:
+    if min > k :
+      min = k
+  print(min)
+list = [4,3,1,7,5,8]
+findsmall(list)
+
+print("===============")
+
+def find_valuesmall(mylist,type): #mylist는 배열이라고 생각하고 작성
+  if type == 'max': #최대값 모드에서는 -1 최소값 모드에서는 100
+    val = -1
+  else:
+    val = 100
+  for k in mylist:
+      if (type== 'max' and val < k) or (type == 'min' and val > k):
+        val=k
+  return val
+  #return => 돌려주다 => 함수가 종료되고 값을 남기고 떠남
+
+    #if type == 'max': #최대값 모드일때
+    #    if val < k:
+    #      val = k
+    #else: #최소값모드일때
+    #    if val < k:
+    #      val = k
+
+list = [4,3,1,7,5,8] 
+    #만약 최대값모드이고 k가 클때 => 값을 변경
+    #만약 최소값모드이고 k가 작을 때 => 값을 변경
+#배열의 최대값과 최소값의 합을 출력하시오
+#max = find_valuesmall(type ='max',list = mylist)
+max = find_valuesmall(list,'max')
+min = find_valuesmall(list,'min')
+print(max+min)
+print("===============")
+
+list = [4,3,1,7,5,8]
+max = -1
+
+for k in list: #list 만큼 하나씩 k에 보관(k = 4->3->1)
+  #현재k값이 최대값인가?
+  if max < k:
+    max = k
+
+print(max)
