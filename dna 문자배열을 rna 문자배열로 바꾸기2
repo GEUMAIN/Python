@@ -1,0 +1,11 @@
+#dna위치를 찾아서 ran위치를 반환
+def trans(pos):
+  ran_src='UAGC'
+  return ran_src[pos]
+
+dna = input('DNA를 입력하세요')
+dna_src='ATCG'
+
+for k in range(len(dna)):
+  search_pos = dna_src.find(dna[k])
+  print(trans(search_pos), end='')
