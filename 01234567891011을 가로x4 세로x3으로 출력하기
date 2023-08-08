@@ -1,0 +1,4 @@
+for i in range(0,12,4):
+  for k in range(0,4):
+    print(f'{i+k}', end = '\t')
+  print('')
