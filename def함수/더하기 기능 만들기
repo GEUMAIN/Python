@@ -1,0 +1,12 @@
+#더하기 기능 sum
+def sum(a,b):
+  result = a+b
+  return result
+
+res = sum(1,2)
+print(res)
+#더 간단한 더하기 기능 sum
+#def sum(a,b):
+  #return a+b #결과를 리턴하는 거지 출력문같은걸 리턴하지는 않음
+
+#print (sum(1,2))
