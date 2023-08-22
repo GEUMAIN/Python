@@ -1,0 +1,26 @@
+#행번호 i를 입력받아 출력하는 별을 출력하는 코드
+i = int(input('행번호 입력 '))
+for a in range(1,i+1,1):
+  for k in range(0,a,1):
+    print(f'*',end='')
+  print()
+print('=============')
+#2번째 방법
+rows = int(input('행번호 입력 '))
+for b in range(rows):
+  for c in range(b+1):
+      print(f'*',end='')
+  print()
+print('=============')
+#반대
+rows2 = int(input('행번호 입력 '))
+for a in range(rows2+1,1,-1):
+  for k in range(1,a,1):
+    print(f'*',end='')
+  print()
+#반대 2번째 방법
+rows3 = int(input('행번호 입력 '))
+for b in range(rows3):
+  for c in range(rows3-b):
+      print(f'*',end='')
+  print()
