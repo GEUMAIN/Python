@@ -1,0 +1,7 @@
+cols = int(input('세로줄 : ')) #세로줄
+rows = int(input('가로줄 : ')) #가로줄
+
+for i in range(0,(cols*4),4):
+  for k in range(0,rows):
+    print(f'{i+k}', end = '\t')
+  print('')
