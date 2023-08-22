@@ -1,0 +1,9 @@
+#0000
+#1111
+#2222
+#3333
+#4444
+for i in range(5): # 0~4
+  for k in range(5):
+    print(f'{i}',end="")
+  print()
