@@ -1,0 +1,35 @@
+import math
+#n이 무조건 홀수
+# 5 입력
+#00*00
+#0***0
+#*****
+#0***0
+#00*00
+rows = int(input('줄 개수를 입력하세요(홀수)'))
+
+#7이라면 4번 반복
+loop = int((rows/2)+1)
+star = 1
+zero = int(rows/2)
+sw =1
+for j in range(loop):
+  for k in range(loop,j,-1):
+    print(' ',end='')
+  for s in range((j+1)*2-1):
+        print('*',end='')
+  print()
+print("==========")
+for i in range(rows):
+    for k in range(zero):
+        print(f' ', end='')
+    for k in range(star):
+        print(f'8', end='')
+    for k in range(zero):
+        print(f' ', end='')
+    print()
+
+    if i == loop -1 :
+        sw = sw * -1
+    star = star + (2 * sw)  #1개->3개
+    zero = zero - (1 * sw)  #3개->2개
