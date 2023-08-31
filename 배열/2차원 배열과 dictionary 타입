@@ -1,0 +1,47 @@
+list = [  
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+    ]
+print(list[2][1])
+print('=====================')
+arr = [1,2,3]
+list = [arr, arr , arr] # [[1,2,3], [1,2,3], [1,2,3]]
+print(list)
+
+arr.append(4) #arr [1,2,3,4]
+print(list)
+
+#참조에 의한 호출이기 때문에 list의 값도 같이 변경이 됨
+studentA = [100, 80, 80 , 90] #과목1234
+studentB = {'korean':100, 
+            'math': 80, 
+            'eng': 80, 
+            'info':90
+            } #dictionary 형식 'key': 'value'의 조합으로 이루어짐
+print(studentA[0]) #국어성적
+print(studentB['korean'])
+
+#B학생에게 jpn 성적 100점 추가
+studentB['jpn'] = 100
+print(studentB)
+
+print(*studentB.keys())
+for k in studentB.keys():
+  print(k)
+print(*studentB.values())
+
+flag = False #과학 찾기 
+for k in studentB.keys():
+  if k == 'scl':
+    flag == True
+if flag == True:
+  print('과학 있음')
+#과학이 없음 이라고 출력하고 싶으면 어떻게??
+else :
+  print('과학 없음')
+
+if 'scl' in studentB: #key 검사
+  print('과학 진짜 있음')
+else :
+  print('과학 진짜 없음')
