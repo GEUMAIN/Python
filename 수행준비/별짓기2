@@ -1,0 +1,19 @@
+# 수행준비
+size = int(input('줄 수 : '))
+
+for i in range(size):
+  for k in range(size-i-1):
+    print(f' ',end='')
+  for s in range(i*2+1):
+    print(f'*',end='')
+  print()
+  
+print('============================')
+star = 1
+for i in range(size):
+  for k in range(size-i-1):
+    print(f' ',end='')
+  for s in range(star):
+    print(f'*',end='')
+  star = star+2
+  print()
