@@ -1,0 +1,15 @@
+#소수판별 = 1과 자신을 제외한 수 중에 나누어지지 않는 수 (단, 2이상)
+
+n = int(input('숫자입력'))
+
+is_prime = True
+for k in range(2 , n): #2 int(n/2)
+  if n % k == 0:
+    # print('소수가 아닙니다')
+    is_prime = False
+    break;
+    
+if is_prime :
+  print('소수입니다')
+else :
+  print('소수가 아닙니다')
