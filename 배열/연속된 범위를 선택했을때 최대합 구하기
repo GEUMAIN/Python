@@ -1,0 +1,10 @@
+#연속된 범위를 선택했을때 최대합은 얼마일까?
+list = [2,-34,65,-7,1,34,-31,32]
+
+total = -9999999999
+
+for i in range(0,len(list)):
+  for k in range(i,len(list)):
+    total = max(total,sum(list[i:k+1])) #max(엑셀과 같음, 항목 중 최대값 반환)
+
+print(total)
