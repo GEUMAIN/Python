@@ -1,0 +1,9 @@
+#1~10까지 출력
+def show(num):
+  print(num)
+  if num < 10:
+    show(num+1)
+  else :
+    return
+
+show(1)
