@@ -1,0 +1,20 @@
+#pypi.org
+#colab 한정
+!pip install gTTS
+!pip install playsound
+
+#gtts라이브러리 중 gTTS만 갖고오기
+from gtts import gTTS
+import playsound
+msg = 'hello world'
+tts = gTTS(msg) #msg를 읽기
+tts.save('hello.mp3') #hello.mg3 저장하기
+playsound.playsound('hello.mp3') #hello.mp3 재생하기
+
+
+from gtts import gTTS
+import playsound
+msg = '안녕하세요'
+tts = gTTS(msg, lang='ko', slow=True) #msg를 읽기
+tts.save('hello.mp3') #hello.mg3 저장하기
+playsound.playsound('hello.mp3') #hello.mp3 재생하기
