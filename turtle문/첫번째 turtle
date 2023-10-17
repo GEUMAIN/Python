@@ -1,0 +1,52 @@
+import turtle
+from turtle import *
+# t= turtle.Turtle()
+
+t1 = turtle.Turtle()
+
+# t1.speed(speed= 1)
+# t1.shape(name='arrow')
+#
+# for i in range (20):
+#     t1.forward(200)
+#     t1.left(120+i)
+#
+# t1.forward(200)
+#
+# t2.speed(speed=3)
+# t2.shape(name='circle')
+# t2.back(100)
+# turtle.exitonclick()
+t1.speed(speed= 0)
+colormode(255)
+t1.shape('turtle')
+dist = 1
+step = 0.1
+angle = 90
+red = 255
+green = 0
+blue = 0
+color = 30
+while True:
+    t1.color(red, green, blue)
+    t1.right(angle)
+    t1.forward(dist)
+    dist += step
+    red = red+color
+    color += 1
+    #green이 증가하는 경우
+    if red >= 255:
+        red =0
+        green += color
+
+    #blue가 증가하는 경우
+    if green >= 255:
+        green =0
+        blue += 30
+    if blue >= 255:
+        blue = 0
+    # angle  = (angle+step)%360 # 400 % 360
+    if color >= 255:
+        color = 0
+
+turtle.exitonclick()
