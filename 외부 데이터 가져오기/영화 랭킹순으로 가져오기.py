@@ -20,4 +20,4 @@ if len(movies) == 0:
     print('값이 없습니다')
 else :
     for movie in movies: #movies 10개의 영화 정보
-        print(movie['movieNm'])
+        print(movie['rank']+'등 : '+movie['movieNm'])
